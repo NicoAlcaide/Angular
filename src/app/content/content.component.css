@@ -1,19 +1,31 @@
 
-
+/* Contenedor principal */
 .tutorial-container {
   display: flex;
   font-family: Arial, sans-serif;
 }
 
+/* Sidebar fijo */
 .sidebar {
   width: 15%;
   background-color: #f4f4f4;
-  padding: 15px;
+  padding: 20px;
   border-right: 1px solid #ccc;
+  height: calc(100vh - 60px); /* Resta el alto de la cabecera */
+  overflow-y: auto; /* Barra de desplazamiento vertical */
+  position: fixed; /* Sidebar fijo */
+  top: 60px; /* Debajo de la cabecera */
+  left: 0; /* Pegado al lado izquierdo */
+  z-index: 999; /* Asegura que quede por encima del contenido */
 }
 
 .sidebar h3 {
   text-align: center;
+}
+
+.sidebar ol {
+  display: block; /* Hace que el enlace ocupe todo el espacio del contenedor */
+  margin-left: -30px; /* Desplaza ligeramente el texto hacia la izquierda */
 }
 
 .sidebar ul {
@@ -35,10 +47,14 @@
 }
 
 
+/* Contenido principal */
 .content {
-  width: 85%;
-  padding: 20px;
+  margin-top: 60px; /* Deja espacio para la cabecera */
+  margin-left: 15%; /* Deja espacio para el sidebar */
+  padding: 50px;
+  width: 85%; /* Ocupa el resto del espacio */
   background-color: #f4f4f4;
+  overflow-y: auto;
 }
 
 .content img {
