@@ -11,7 +11,7 @@
   background-color: #f4f4f4;
   padding: 20px;
   border-right: 1px solid #ccc;
-  height: calc(100vh - 60px); /* Resta el alto de la cabecera */
+  height: calc(100vh - 100px); /* Resta el alto de la cabecera */
   overflow-y: auto; /* Barra de desplazamiento vertical */
   position: fixed; /* Sidebar fijo */
   top: 60px; /* Debajo de la cabecera */
@@ -26,6 +26,7 @@
 .sidebar ol {
   display: block; /* Hace que el enlace ocupe todo el espacio del contenedor */
   margin-left: -30px; /* Desplaza ligeramente el texto hacia la izquierda */
+  text-decoration: none; /* Añade subrayado solo al pasar el mouse */
 }
 
 .sidebar ul {
@@ -55,14 +56,27 @@
   width: 85%; /* Ocupa el resto del espacio */
   background-color: #f4f4f4;
   overflow-y: auto;
+
+}
+
+.content h1 {
+  display: flex;
+  font-family: Arial, sans-serif;
+  font-size: 35px;
 }
 
 .content img {
   width: 100%;
   margin: 10px 0;
+   height: auto;
 }
 
 .content iframe {
   display: block;
   margin: 20px auto;
+}
+
+imagen {
+  max-width: 100%;
+  height: auto;
 }
