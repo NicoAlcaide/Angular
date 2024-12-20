@@ -2,13 +2,13 @@
 .header {
   background-color: #696969;
   color: white;
-  padding: 5px 0;
+  padding: 0px 0px;
   text-align: center;
   position: fixed; /* Mantiene la cabecera fija */
   top: 0; /* Pegada a la parte superior */
   left: 0; /* Alineada a la izquierda */
-  width: 100%; /* Ocupa todo el ancho de la pantalla */
-  z-index: 1000; /* Asegura que esté por encima del resto */
+  width:100%; /* Ocupa todo el ancho de la pantalla */
+  z-index: 1000;  /*Asegura que esté por encima del resto */
 }
 
 .header-content {

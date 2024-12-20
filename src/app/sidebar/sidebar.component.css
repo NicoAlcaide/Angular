@@ -1,0 +1,51 @@
+
+/* Sidebar fijo */
+.sidebar {
+  width: 15%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  height: calc(100vh - 100px); /* Resta el alto de la cabecera */
+  overflow-y: auto; /* Barra de desplazamiento vertical */
+  position: fixed; /* Sidebar fijo */
+  top: 60px; /* Debajo de la cabecera */
+  left: 0; /* Pegado al lado izquierdo */
+  z-index: 999; /* Asegura que quede por encima del contenido */
+    
+}
+
+.sidebar h3 {
+  text-align: center;
+}
+
+.sidebar ol {
+  display: block; /* Hace que el enlace ocupe todo el espacio del contenedor */
+  margin-left: -30px; /* Desplaza ligeramente el texto hacia la izquierda */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline; /* Añade subrayado solo al pasar el mouse */
+}
+
+
+.link-sin-subrayado{
+	text-decoration: none;
+}
+
+.link-sin-subrayado:hover{
+	text-decoration: underline;
+}
