@@ -1,23 +1,29 @@
-/* Cabecera fija */
-.header {
-  background-color: #696969;
-  color: white;
-  padding: 0px 0px;
-  text-align: center;
+/* CSS para la cabecera fija */
+.header-toolbar {
   position: fixed; /* Mantiene la cabecera fija */
   top: 0; /* Pegada a la parte superior */
   left: 0; /* Alineada a la izquierda */
-  width:100%; /* Ocupa todo el ancho de la pantalla */
-  z-index: 1000;  /*Asegura que esté por encima del resto */
-}
-
-.header-content {
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  z-index: 1000; /* Asegura que esté por encima del resto */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #1976D2, #42A5F5); /* Fondo degradado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+  padding: 0 20px; /* Espaciado horizontal */
+  height: 80px; /* Altura personalizada */
 }
 
-.logo {
+
+/* Opcional: Personalización adicional */
+.logo-container .logo {
+  width: 50px;
   height: 50px;
-  margin-right: 15px;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
 }

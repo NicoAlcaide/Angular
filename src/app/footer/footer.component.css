@@ -10,3 +10,35 @@
   height: 30px;
   margin: 0 10px;
 }
+
+
+
+/* --- PIE DE PÁGINA --- */
+.footer {
+  margin-top: 30px;
+  padding: 20px;
+  background: #424242;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.footer-links img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-links img:hover {
+  transform: scale(1.1);
+}
+
+.footer-text {
+  font-size: 0.9rem;
+}

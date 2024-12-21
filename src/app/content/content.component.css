@@ -1,39 +1,77 @@
-
 /* Contenedor principal */
 .tutorial-container {
   display: flex;
   font-family: Arial, sans-serif;
 }
 
-
 /* Contenido principal */
 .content {
-  margin-top: 30px; /* Deja espacio para la cabecera */
+  margin-top: 80px; /* Deja espacio para la cabecera */
   margin-left: 15%; /* Deja espacio para el sidebar */
-  padding: 50px;
+  padding: 10px;
   width: 85%; /* Ocupa el resto del espacio */
   background-color: #f4f4f4;
-
-  }
-
-.content h1 {
-  display: flex;
-  font-family: Arial, sans-serif;
-  font-size: 35px;
 }
 
 .content img {
   width: 100%;
   margin: 10px 0;
-   height: auto;
-}
-
-.content iframe {
-  display: block;
-  margin: 20px auto;
-}
-
-imagen {
-  max-width: 100%;
   height: auto;
 }
+
+mat-card {
+  margin-bottom: 20px; /* separacion entre la caja y el comienzo del texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* So */
+}
+
+mat-card-header {
+  background-color: #008080; /* Color de las cabeceras de los apartados  */
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-subapartado { 
+	background-color: #00A180;  /* Color de las cabeceras de los subapartados  */
+}	
+
+
+mat-card-subtitle {
+	background-color: #557bff;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+	
+}
+
+
+
+mat-card-content {
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*  FAQ  */
+mat-accordion {
+  margin: 20px 0;
+}
+
+mat-expansion-panel-header {
+  background-color: #f1f1f1;
+}
+
+mat-panel-title, mat-panel-description {
+  font-size: 16px;
+}
+
+
+

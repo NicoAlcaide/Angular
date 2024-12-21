@@ -1,46 +1,44 @@
-
-/* Sidebar fijo */
 .sidebar {
   width: 15%;
   background-color: #f4f4f4;
-  padding: 20px;
+  
   border-right: 1px solid #ccc;
   height: calc(100vh - 100px); /* Resta el alto de la cabecera */
   overflow-y: auto; /* Barra de desplazamiento vertical */
   position: fixed; /* Sidebar fijo */
-  top: 60px; /* Debajo de la cabecera */
+  margin-top: 80px; /* Debajo de la cabecera */
+  
   left: 0; /* Pegado al lado izquierdo */
   z-index: 999; /* Asegura que quede por encima del contenido */
-    
 }
 
-.sidebar h3 {
+h3 {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin: 20px 0 10px 0; /* Añade margen superior e inferior */
+  padding-bottom: 10px;
+  border-bottom: 2px solid #007bff;
   text-align: center;
 }
 
-.sidebar ol {
-  display: block; /* Hace que el enlace ocupe todo el espacio del contenedor */
-  margin-left: -30px; /* Desplaza ligeramente el texto hacia la izquierda */
+.mat-nav-list .mat-list-item {
+  padding: 2px 10px;
+  display: block; /* Asegura que cada ítem se muestre en una nueva línea */
 }
 
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin: 10px 0;
-}
-
-.sidebar ul li a {
-  text-decoration: none;
+.mat-nav-list .mat-list-item a {
+  text-decoration: none !important; /* Quita el subrayado de los enlaces */
   color: #333;
 }
 
-.sidebar ul li a:hover {
-  text-decoration: underline; /* Añade subrayado solo al pasar el mouse */
+.mat-nav-list .mat-list-item a:hover {
+  color: #007bff;
 }
 
+.mat-nav-list.dense {
+  margin-left: 20px; /* Sangría de los sub-elementos para evitar superposición */
+  display: block; /* Asegura que cada sub-lista se muestre en una nueva línea */
+}
 
 .link-sin-subrayado{
 	text-decoration: none;
@@ -49,3 +47,20 @@
 .link-sin-subrayado:hover{
 	text-decoration: underline;
 }
+
+.link-sin-subrayado-sub{
+	text-decoration: none;
+	margin-left: 20px; /* Sangría de los sub-elementos para evitar superposición */
+}
+
+.link-sin-subrayado-sub:hover{
+	text-decoration: underline;
+	margin-left: 20px; /* Sangría de los sub-elementos para evitar superposición */
+}
+
+
+
+
+	
+	
+	
