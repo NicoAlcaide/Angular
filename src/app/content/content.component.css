@@ -63,3 +63,31 @@ mat-panel-title, mat-panel-description {
 
 
 
+
+
+.custom-li {
+  background-color: #e0f7fa; /* Color de fondo */
+  margin: 10px 0; /* Márgenes */
+  border-radius: 8px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+  padding: 10px; /* Espaciado interno */
+}
+
+.custom-li h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00796b;
+}
+
+.custom-li p {
+  font-size: 1rem;
+  color: #004d40;
+}
+
+.custom-li mat-icon {
+  color: #004d40;
+  margin-right: 10px;
+}
+
+
+
