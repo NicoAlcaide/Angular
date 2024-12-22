@@ -1,18 +1,22 @@
 .sidebar {
-  width: 15%;
-  background-color: #f4f4f4;
+	position: fixed; /* Sidebar fijo */
+	width: 15%;
+	height: calc(100vh - 120px); /* Resta el alto de la cabecera */
   
-  border-right: 1px solid #ccc;
-  height: calc(100vh - 100px); /* Resta el alto de la cabecera */
-  overflow-y: auto; /* Barra de desplazamiento vertical */
-  position: fixed; /* Sidebar fijo */
-  margin-top: 80px; /* Debajo de la cabecera */
+	background-color: #f4f4f4;
   
-  left: 0; /* Pegado al lado izquierdo */
-  z-index: 999; /* Asegura que quede por encima del contenido */
+	border-right: 1px solid #ccc;
+  
+	overflow-y: auto; /* Barra de desplazamiento vertical */
+  
+	margin-top: 80px; /* Debajo de la cabecera */
+  
+	left: 0; /* Pegado al lado izquierdo */
+	/*  z-index: 999;  Asegura que quede por encima del contenido */
 }
 
-h3 {
+/* Título del Indice  */
+h3 {   
   font-family: Arial, sans-serif;
   font-size: 18px;
   margin: 20px 0 10px 0; /* Añade margen superior e inferior */

@@ -1,16 +1,23 @@
 /* Contenedor principal */
 .tutorial-container {
-  display: flex;
+ 
+ display: flex;
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+
 }
 
 /* Contenido principal */
 .content {
-  margin-top: 80px; /* Deja espacio para la cabecera */
-  margin-left: 15%; /* Deja espacio para el sidebar */
-  padding: 10px;
-  width: 85%; /* Ocupa el resto del espacio */
-  background-color: #f4f4f4;
+	
+	width: 85%; /* Ocupa el resto del espacio */
+	height: 100%;
+	background-color: #f4f4f4;
+	
+	margin-top: 80px; /* Deja espacio para la cabecera */
+	margin-left: 15%; /* Deja espacio para el sidebar */
+  
+	padding: 10px;	
 }
 
 .content img {
@@ -21,7 +28,7 @@
 
 mat-card {
   margin-bottom: 20px; /* separacion entre la caja y el comienzo del texto */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* So */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la caja de cada apartado */
 }
 
 mat-card-header {
@@ -36,28 +43,9 @@ mat-card-header {
 	background-color: #00A180;  /* Color de las cabeceras de los subapartados  */
 }	
 
-
-mat-card-subtitle {
-	background-color: #557bff;
-  color: white;
-  padding: 10px;
-  border-radius: 4px;
-	
-}
-
-
-
 mat-card-content {
   padding: 10px;
 }
-
-
-
-
-
-
-
-
 
 
 /*  FAQ  */
