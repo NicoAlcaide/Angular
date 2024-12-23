@@ -397,7 +397,17 @@
 			<mat-card-title>Angular Material</mat-card-title>
 			</mat-card-header>
 			<mat-card-content>
-			<p>Uno de los paquetes disponible más utilizado es el de Angular Material que nos permite dar un estilo moderno a nuestra web. Vamos a analizar un poco este paquete.< /a></p>
+			<p>Uno de los paquetes disponible más utilizado es el de Angular Material que nos permite dar un estilo moderno a nuestra web. Para introducirnos en este paquete
+			podemos ver el primer vídeo en inglés y el segundo para enseñarnos como se utiliza.</p>
+			
+			<div class="video-container">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/bV8emCBmFHk?si=u08Z-dpdvBzCOiWf" title="YouTube video player" frameborder="0" 
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/rWOwTVSMfPw?si=AMujI89PiXKaXfQJ" title="YouTube video player" frameborder="0" allow="accelerometer; 
+			autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			
 			</mat-card-content>
 		</mat-card>
 		</section>
@@ -569,28 +579,107 @@
 				<mat-card-header>	
 					<mat-card-title>Errores más habituales en Angular</mat-card-title>
 				</mat-card-header>
-				<mat-card-content>
-					<p>Error de instalación. "Error: Node.js no está actualizado".</p>
-						<li>Mensaje: Your Node.js version is not supported. Please upgrade to Node.js version X.X.X or higher.</li>
-						    <li>Causa: Estás usando una versión antigua de Node.js.</li>
-							<li>Solución:<pre>Ejecutar en el terminal para comprobar la versión instalada --> node -v 
-								nvm install 18  # O la versión recomendada por Angular</pre></li>
-						
-									
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+					<mat-card-content>
+							
+						<mat-card-content>
+						<mat-accordion> 
+							<mat-expansion-panel> 
+								<mat-expansion-panel-header><mat-panel-title>Errores de instalación </mat-panel-title></mat-expansion-panel-header> 
+									<ul>
+										<p>Error de instalación. "Error: Node.js no está actualizado".</p>
+										<li>Mensaje: Your Node.js version is not supported. Please upgrade to Node.js version X.X.X or higher.</li>
+										<li>Causa: Estás usando una versión antigua de Node.js.</li>
+										<li>Solución:<pre>Ejecutar en el terminal para comprobar la versión instalada --> node -v nvm install 18  # O la versión recomendada por Angular</pre></li>
+									</ul>
+									<ul>
+										<p>Error: Cannot find module '&#64;angular/core'</p>
+										<li>Causa: No se instalaron correctamente las dependencias del proyecto.</li>
+										<li>Solución: Ejecutar npm install en el directorio raíz del proyecto y asegúrarse que tu archivo package.json incluye las dependencias necesarias.	</li>
+									</ul>
+									<ul>
+										<p>Error: npm ERR! relacionado con permisos</p>
+										<li>Causa: Problemas con los permisos de escritura en tu entorno.</li>
+										<li>Solución: Use el comando sudo si está en un entorno Unix/Linux, ejecute npm cache clean --force para limpiar el caché de npm.	</li>
+									</ul>
+									<ul>
+										<p>Error: Cannot find module '&#64;angular/...'</p>
+										<li>Causa: Las versiones de Angular y sus dependencias no son compatibles.</li>
+										<li>Solución: Use el comando "ng update" para actualizar Angular y las dependencias "ng update &#64;angular/core &#64;angular/cli" y verifique las 
+										versiones en el archivo package.json.</li>
+									</ul>	
+									<ul>
+										<p>Error: Angular CLI no está instalado</p>
+										<li>Mensaje: ng: command not found</li>
+										<li>Causa: Angular CLI no está instalado globalmente.</li>
+										<li>Solución: Ejecute el comando "npm install -g &#64;angular/cli".</li>
+									</ul>										
+							</mat-expansion-panel> 				
+						</mat-accordion>
+							
+						<mat-accordion> 
+							<mat-expansion-panel> 
+								<mat-expansion-panel-header><mat-panel-title>Errores de Configuración</mat-panel-title></mat-expansion-panel-header> 
+									<ul>
+										<p>Error: NG8001: 'component' is not a known element</p>
+										<li>Causa: El componente no está declarado o importado correctamente.</li>
+										<li>Solución: asegúrese de declarar el componente en el módulo correspondiente.</li><pre>&#64;NgModule(&#123; declarations: [TuComponente] &#125;)
+										Si pertenece a un módulo externo, importe ese módulo en el fichero app.module.ts o el módulo donde lo necesite utilizar.</pre>
+									</ul>
+									<ul>
+										<p>Error: Module not found: Error: Can't resolve '...'</p>
+										<li>Causa: Angular no encuentra el módulo especificado.</li>
+										<li>Solución: Verifique la importación sea correcta en el archivo correspondiente. Si es un módulo externo, asegúrese que esté instalado con el comando
+										"npm install nombre-modulo".</li>
+									</ul>
+									<ul>
+										<p>Error: Problemas con permisos npm</p>
+										<li>Mensaje: EACCES: permission denied</li>
+										<li>Causa: Falta de permisos en la carpeta global de npm (normalmente ocurrirá en sistemas Linux).</li>
+										<li>Solución: Ejecutar los comandos "sudo chown -R $(whoami) ~/.npm" y "sudo chown -R $(whoami) /usr/local/lib/node_modules"</li>
+									</ul>
+							</mat-expansion-panel> 				
+						</mat-accordion>
+				
+						<mat-accordion> 
+							<mat-expansion-panel> 
+								<mat-expansion-panel-header><mat-panel-title>Errores de Enrutamiento</mat-panel-title></mat-expansion-panel-header> 
+									<ul>
+										<p>Error: Cannot match any routes</p>
+										<li>Causa: La URL solicitada no coincide con ninguna ruta definida en app-routing.module.ts.</li>
+										<li>Solución: Verifique que la ruta está definida correctamente en el archivo de rutas. Añada una ruta comodín si necesita manejar rutas no encontradas:
+											<pre>&#123; path: '**', component: PaginaNoEncontradaComponent &#125;</pre></li>
+									</ul>
+									<ul>
+										<p>Error: Router-outlet is not a known element</p>
+										<li>Causa: No has importado el módulo RouterModule en el módulo correspondiente.</li>
+										<li>Solución: Asegúrese de importar RouterModule en el archivo del módulo:
+											<pre>import &#123;  RouterModule ;&#125; from '&#64;angular/router'</pre></li>
+									</ul>
+							</mat-expansion-panel> 				
+						</mat-accordion>
+				
+						<mat-accordion> 
+							<mat-expansion-panel> 
+								<mat-expansion-panel-header><mat-panel-title>Errores de Estilos y Temas</mat-panel-title></mat-expansion-panel-header> 
+									<ul>
+										<p>Error: styles.scss not found</p>
+										<li>Causa: El archivo de estilos global no está definido o configurado.</li>
+										<li>Solución: Revise que el archivo angular.json contiene el archivo styles.scss en su configuración: ""styles": ["src/styles.scss"]"</li>
+									</ul>
+									<ul>
+										<p>Error: Material Design components not styled</p>
+										<li>Causa: No ha importado un tema predefinido o personalizado para Angular Material.</li>
+										<li>Solución: En styles.scss, importe un tema predefinido: (en fichero css) &#64;import "&#64;angular/material/prebuilt-themes/indigo-pink.css";</li>
+									</ul>
+									<ul>
+										<p>Error: Módulos Material no importados</p>
+										<li>Mensaje: MatButton is not a known element</li>
+										<li>Causa: El módulo del componente de Material no está importado.</li>
+										<li>Solución: import &#123; MatButtonModule &#125; from '&#64;angular/material/button';</li>
+									</ul>
+							</mat-expansion-panel> 				
+						</mat-accordion>				
+					</mat-card-content>							
 				 </mat-card-content>
 			</mat-card>			
 		</section>
@@ -599,16 +688,21 @@
 			<mat-card>
 				<mat-card-header>	
 					<mat-card-title>Conclusiones sobre Angular</mat-card-title>
-				</mat-card-header>
-				<mat-card-content>
-					<p></p>			
-				 </mat-card-content>
+				</mat-card-header>	
+					<mat-card-content>
+						<p>El aprendizaje de Angular es complejo al principio. Hay que entender conceptos generales de funcionamiento, adaptarse cuando se viene de programar en html y css cuesta 
+						un poco pero una vez que se tienen claros los conceptos se convierte en una herramienta de desarrollo web "brutal".</p>
+						<p>El desarrollo de este tututorial se ha realizado partiendo de cero en Angular y tras muchos herrores al principio de configuración y entendimiento de llamadas a módulos 
+						se ha podido avanzar rápidamenete incorporando elementos visuales atractivos a nuestra web.
+						<p>Después de "trastear" un poco con Angular, desarrollando una web sencilla con elementos visuales y entendiendo el funcionamiento es muy recomendable estudiar bien las 
+						posibilidades del paquete Angular Materials, mantenido por google, lo que nos da unas garantías de continuidad y fiabilidad. A continuación hay que analizar todas las 
+						librerías que se ogrecen en Internet. Por ejemplo <a href="	https://userguiding.com/es/blog/librerias-onboarding-angular" target="_blank">en este link podemos consultar 
+						6 librerías interesantes.</a>
+						</p>
+					
+					</mat-card-content>				
 			</mat-card>
-		</section>
-			
-		
-	
-    
+		</section>	    
 	</div>
 </div>
 <router-outlet></router-outlet>

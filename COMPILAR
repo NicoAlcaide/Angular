@@ -1,0 +1,17 @@
+[33m>[39m Building...
+[32m√[39m Building...
+[1mInitial chunk files[22m  [2m | [22m[1mNames[22m        [2m | [22m [1mRaw size[22m[2m | [22m[1mEstimated transfer size[22m
+[32mmain-LFF66UGA.js[39m     [2m | [22m[2mmain[22m         [2m | [22m[36m158.72 kB[39m[2m | [22m               [36m35.63 kB[39m
+[32mchunk-P4KH35CL.js[39m    [2m | [22m[2m-[22m            [2m | [22m[36m130.49 kB[39m[2m | [22m               [36m38.75 kB[39m
+[32mpolyfills-FFHMD2TL.js[39m[2m | [22m[2mpolyfills[22m    [2m | [22m [36m34.52 kB[39m[2m | [22m               [36m11.28 kB[39m
+[32mstyles-CXQUZ3PB.css[39m  [2m | [22m[2mstyles[22m       [2m | [22m  [36m6.98 kB[39m[2m | [22m                [36m1.13 kB[39m
+
+[1m [22m                    [2m | [22m[1mInitial total[22m[2m | [22m[1m330.71 kB[22m[2m | [22m               [1m86.79 kB[22m
+
+[1mLazy chunk files[22m     [2m | [22m[1mNames[22m        [2m | [22m [1mRaw size[22m[2m | [22m[1mEstimated transfer size[22m
+[32mchunk-L2FIKSJO.js[39m    [2m | [22m[2mbrowser[22m      [2m | [22m [36m63.93 kB[39m[2m | [22m               [36m17.08 kB[39m
+
+Application bundle generation complete. [8.868 seconds]
+
+Output location: C:\Users\nalcaide\Lab\tutorial\docs
+

@@ -1,7 +1,7 @@
 /* Contenedor principal */
 .tutorial-container {
  
- display: flex;
+  display: flex;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
 
@@ -89,5 +89,16 @@ mat-panel-title, mat-panel-description {
   margin-right: 10px;
 }
 
+/* Cuando muestro dos vídeos en la misma fila  */
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Espacio entre los vídeos */
+    flex-wrap: wrap; /* Asegura que los vídeos se ajusten si no hay suficiente espacio */
+}
+
+iframe {
+    border: none;
+}
 
 
