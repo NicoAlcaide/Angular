@@ -4,6 +4,7 @@
   top: 0; /* Pegada a la parte superior */
   left: 0; /* Alineada a la izquierda */
   width: 100%; /* Ocupa todo el ancho de la pantalla */
+   height: 80px; /* Altura personalizada */
   z-index: 1000; /* Asegura que esté por encima del resto */
   display: flex;
   align-items: center;
@@ -11,7 +12,7 @@
   background: linear-gradient(135deg, #1976D2, #42A5F5); /* Fondo degradado */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
   padding: 0 20px; /* Espaciado horizontal */
-  height: 80px; /* Altura personalizada */
+ 
 }
 
 
